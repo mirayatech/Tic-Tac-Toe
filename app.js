@@ -31,3 +31,31 @@ selectBtnO.onclick = () => {
   // add three class name in player element
   players.setAttribute("class", "players active player");
 };
+
+// Function - User Click
+function clickedBox(element) {
+  if (players.classList.contains("player")) {
+    // Player select 'O', change the playerSign value to 'O'
+    playerSign = "O";
+    // adding O-Icon inside user clicked element
+    element.innerHTML = `<i class="${playerOIcon}"></i>`;
+    players.classList.remove("active");
+    element.setAttribute("id", playerSign);
+  } else {
+    // adding X-Icon inside user clicked element
+    element.innerHTML = `<i class="${playerXIcon}"></i>`;
+    element.setAttribute("id", playerSign);
+    players.classList.add("active");
+  }
+  //calling the winner function
+  selectWinner();
+  // user cannot select any other box until box select
+  element.style.pointerEvents = "none";
+  playBoard.style.pointerEvents = "none";
+  // generating random time delay so bot will delay randomly
+  let randomTimeDelay = (Math.random() * 1000 + 200).toFixed();
+  setTimeout(() => {
+    bot(runBot);
+    // passing random delay time
+  }, randomTimeDelay);
+}
