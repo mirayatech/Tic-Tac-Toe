@@ -1,5 +1,5 @@
 # Tic-Tac-Toe
-Tic Tac Toe Game 🔢
+Tic Tac Toe game built with HTML, CSS and JavaScript 🔢
 
 # About this project 🚀
 When the user chooses who he wants to be (X or O), the select-box will disappear and the playboard will be visible. At the top of the board section are player names (X or O) that indicate or show whose turn it is now. In the center of the page there is a tic-tac-toe play area with nine square boxes. When you click on a box, the character you selected in the selection field is visible.
