@@ -150,3 +150,83 @@ body {
 .players.active .slider {
   left: 50%;
 }
+/* Play Area */
+
+.play-area {
+  margin-top: 20px;
+}
+.play-area section {
+  display: flex;
+  margin-bottom: 1px;
+}
+.play-area section span {
+  display: block;
+  height: 130px;
+  width: 130px;
+  margin: 3px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+.play-area section span i {
+  margin-top: 35px;
+  font-size: calc(50 / 16 * 1rem);
+}
+.fa-times {
+  color: var(--x-color);
+}
+.fa-circle {
+  color: var(--o-color);
+}
+/* Result Box */
+
+.result-box {
+  padding: 25px 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  background: #fff;
+  pointer-events: none;
+
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  transform: translate(-50%, -50%) scale(0.9);
+}
+.result-box.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.result-box .won-text {
+  font-size: calc(30 / 16 * 1rem);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+.result-box .won-text p {
+  color: var(--button);
+  font-weight: 600;
+  margin: 0 5px;
+}
+.result-box .btn {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.btn button {
+  font-size: calc(18 / 16 * 1rem);
+  font-weight: 500;
+  padding: 8px 20px;
+  border: none;
+  background: var(--button);
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
