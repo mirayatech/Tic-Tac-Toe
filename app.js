@@ -12,3 +12,22 @@ let playerXIcon = "fas fa-times",
   playerOIcon = "far fa-circle",
   playerSign = "X",
   runBot = true;
+
+// Once window is loaded
+window.onload = () => {
+  for (let i = 0; i < allBox.length; i++) {
+    allBox[i].setAttribute("onclick", "clickedBox(this)");
+  }
+};
+// hide selectbox & show playground on Player-X button clicked
+selectBtnX.onclick = () => {
+  selectBox.classList.add("hide");
+  playBoard.classList.add("show");
+};
+// hide selectbox & show playground on Player-O button clicked
+selectBtnO.onclick = () => {
+  selectBox.classList.add("hide");
+  playBoard.classList.add("show");
+  // add three class name in player element
+  players.setAttribute("class", "players active player");
+};
