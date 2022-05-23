@@ -1,0 +1,82 @@
+:root {
+    --button: #7c5de0;
+    --background: #39238d;
+    --x-color: #eb1751;
+    --o-color: #ffd032;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: var(--background);
+  }
+  
+  .select-box,
+  .play-board,
+  .result-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+  }
+  
+  .options button:hover,
+  .btn button:hover {
+    transform: scale(0.96);
+  }
+  
+  /* Select Box */
+  .select-box {
+    background: #fff;
+    padding: 20px 25px 25px;
+    border-radius: 5px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  }
+  .select-box.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .select-box header {
+    text-align: center;
+    font-size: calc(30 / 16 * 1rem);
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+  }
+  .select-box .title {
+    font-size: calc(22 / 16 * 1rem);
+    font-weight: 500;
+    margin: 20px 0;
+  }
+  .select-box .options {
+    display: flex;
+    width: 100%;
+  }
+  .options button {
+    width: 100%;
+    font-size: calc(20 / 16 * 1rem);
+    font-weight: 500;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .options button.playerX {
+    background: var(--x-color);
+    margin-right: 5px;
+  }
+  .options button.playerO {
+    background: var(--o-color);
+    margin-left: 5px;
+  }
