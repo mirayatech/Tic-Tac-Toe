@@ -230,3 +230,93 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+/* Media Query */
+@media (max-width: 500px) {
+  /* Select Box */
+  .select-box {
+    max-width: 370px;
+  }
+  .select-box header {
+    font-size: calc(25 / 16 * 1rem);
+  }
+  .select-box .title {
+    font-size: calc(18 / 16 * 1rem);
+  }
+  .options button {
+    font-size: 1rem;
+  }
+
+  /* Play Board */
+
+  .play-board .players {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+  .players span {
+    font-size: calc(18 / 16 * 1rem);
+    padding: 7px 0;
+  }
+
+  /* Play Area */
+
+  .play-area section span {
+    height: 110px;
+    width: 110px;
+  }
+  .play-area section span i {
+    margin-top: 30px;
+    font-size: calc(50 / 16 * 1rem);
+  }
+  /* Result Box */
+
+  .result-box {
+    max-width: 370px;
+  }
+
+  .result-box .won-text {
+    font-size: calc(25 / 16 * 1rem);
+  }
+  .result-box .won-text p {
+    color: var(--button);
+    font-weight: 600;
+    margin: 0 5px;
+  }
+
+  .btn button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 390px) {
+  /* Select Box */
+  .select-box {
+    max-width: 340px;
+  }
+  .select-box header {
+    font-size: calc(20 / 16 * 1rem);
+  }
+  .select-box .title {
+    font-size: 1rem;
+  }
+  .options button {
+    font-weight: 600;
+    font-size: calc(14 / 16 * 1rem);
+  }
+
+  /* Play Area */
+
+  .play-area section span {
+    height: 100px;
+    width: 100px;
+  }
+  .play-area section span i {
+    margin-top: 25px;
+  }
+  /* Result Box */
+
+  .result-box {
+    max-width: 340px;
+  }
+}
