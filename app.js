@@ -59,3 +59,39 @@ function clickedBox(element) {
     // passing random delay time
   }, randomTimeDelay);
 }
+// Function - Bot click
+function bot() {
+  let array = [];
+  if (runBot) {
+    playerSign = "O"; // first change the playerSign... so if user has X value in id then bot will have O
+    for (let i = 0; i < allBox.length; i++) {
+      // if span has no child element
+      if (allBox[i].childElementCount == 0) {
+        // inserting or unselected boxes inside array means that span has o children
+        array.push(i);
+      }
+    }
+    let randomBox = array[Math.floor(Math.random() * array.length)];
+    // getting random index from array so bot will select random unselected box
+    if (array.length > 0) {
+      if (players.classList.contains("player")) {
+        playerSign = "X";
+        // adding X inside user clicked element
+        allBox[randomBox].innerHTML = `<i class="${playerXIcon}"></i>`;
+        allBox[randomBox].setAttribute("id", playerSign);
+        players.classList.add("active");
+      } else {
+        // adding O inside user clicked element
+        allBox[randomBox].innerHTML = `<i class="${playerOIcon}"></i>`;
+        players.classList.remove("active");
+        allBox[randomBox].setAttribute("id", playerSign);
+      }
+      selectWinner();
+    }
+    // cant select the same box as bot selected
+    allBox[randomBox].style.pointerEvents = "none";
+    playBoard.style.pointerEvents = "auto";
+    // passing the x value
+    playerSign = "X";
+  }
+}
