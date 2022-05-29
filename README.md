@@ -12,3 +12,13 @@ If no one wins the match and all nine-box selected then again the playboard sect
 * `HTML`
 * `CSS`
 * `JavaScript`
+
+## How it looks 🎥
+
+**Live:** https://toxo.netlify.app/
+
+
+https://user-images.githubusercontent.com/71933266/170869421-884e380c-7ca7-493c-b36a-c27b941af92d.mov
+
+
+
