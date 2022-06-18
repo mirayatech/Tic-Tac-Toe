@@ -55,6 +55,28 @@ body {
   font-weight: 500;
   margin: 20px 0;
 }
+
+.select-box .author {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 20px 0 0 0;
+  border-top: 1px solid lightgrey;
+
+}
+
+.select-box .author a:visited, a{
+color: #7c5de0;
+transition: all .3s ease;
+
+}
+
+.select-box .author a:hover{
+  color: #5c3aca;
+  
+  }
+  
+
 .select-box .options {
   display: flex;
   width: 100%;
@@ -70,6 +92,7 @@ body {
   outline: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-bottom: 30px;
 }
 
 .options button.playerX {
@@ -303,6 +326,11 @@ body {
   .options button {
     font-weight: 600;
     font-size: calc(14 / 16 * 1rem);
+  }
+
+  .select-box .author {
+    font-size: 1rem;
+  
   }
 
   /* Play Area */
