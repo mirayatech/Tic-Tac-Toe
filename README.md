@@ -15,7 +15,7 @@ If no one wins the match and all nine-box selected then again the playboard sect
 
 ## How it looks 🎥
 
-**Live:** https://toxo.netlify.app/
+**Live:** https://toxo-two.vercel.app/
 
 
 
