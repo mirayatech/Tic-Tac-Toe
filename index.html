@@ -1,69 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- select box -->
     <div class="select-box">
-
-        <header>Tic Tac Toe</header>
-        <div class="content">
-
-            <div class="title">Select which player you want to be:</div>
-            <div class="options">
-                <button class="playerX">Player (X)</button>
-                <button class="playerO">Player (O)</button>
-            </div>
+      <header>Tic Tac Toe</header>
+      <div class="content">
+        <div class="title">Select which player you want to be:</div>
+        <div class="options">
+          <button class="playerX">Player (X)</button>
+          <button class="playerO">Player (O)</button>
         </div>
+      </div>
 
-        <div class="author">
-            Created by <a href="https://github.com/mirayaabrodi" target="_blank">Miraya Abrodi</a>
-        </div>
+      <div class="author">
+        Created by
+        <a href="https://github.com/mirayatech" target="_blank">Miraya Tech</a>
+      </div>
     </div>
     <!-- playboard section -->
     <div class="play-board">
-        <div class="details">
-            <div class="players">
-                <span class="Xturn">X's Turn</span>
-                <span class="Oturn">O's Turn</span>
-                <div class="slider"></div>
-            </div>
+      <div class="details">
+        <div class="players">
+          <span class="Xturn">X's Turn</span>
+          <span class="Oturn">O's Turn</span>
+          <div class="slider"></div>
         </div>
-        <div class="play-area">
-            <section>
-                <span class="box1"></span>
-                <span class="box2"></span>
-                <span class="box3"></span>
-            </section>
-            <section>
-                <span class="box4"></span>
-                <span class="box5"></span>
-                <span class="box6"></span>
-            </section>
-            <section>
-                <span class="box7"></span>
-                <span class="box8"></span>
-                <span class="box9"></span>
-            </section>
-        </div>
+      </div>
+      <div class="play-area">
+        <section>
+          <span class="box1"></span>
+          <span class="box2"></span>
+          <span class="box3"></span>
+        </section>
+        <section>
+          <span class="box4"></span>
+          <span class="box5"></span>
+          <span class="box6"></span>
+        </section>
+        <section>
+          <span class="box7"></span>
+          <span class="box8"></span>
+          <span class="box9"></span>
+        </section>
+      </div>
     </div>
     <!-- result box -->
     <div class="result-box">
-        <div class="won-text"></div>
-        <div class="btn"><button>Replay</button></div>
+      <div class="won-text"></div>
+      <div class="btn"><button>Replay</button></div>
     </div>
     <!-- Script tag -->
     <script src="./app.js"></script>
-</body>
-
+  </body>
 </html>
